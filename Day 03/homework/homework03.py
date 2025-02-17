@@ -28,4 +28,9 @@ print(90 / 4)
 print(14 * 3)
 print(24 * 4)
 
-print("გამარჯობა" + "მე" + "მქვია" + "გიორგი" )
+hi = "გამარჯობა"
+me = "მე"
+myname = "მქვია"
+name = "გიორგი"
+
+print(hi + me + myname + name )
