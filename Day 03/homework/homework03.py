@@ -1,12 +1,23 @@
-print("apple")# str
-print("tomato")# str
-print("cucumber")# str
-print(10)# int
-print(100)# int
-print(1000)# int
-print(1.7)# float
-print(9.4)# float
-print(0.7)# float
+fruit = "apple"
+vegetable = "tomato"
+vegetable2 = "cucumber"
+
+ati = 10
+asi = 100
+atasi = 1000
+ertmtlshvd = 1.7
+cxrmtlotx = 9.4 
+nolimtlshvd = 0.7
+
+print(fruit)# str
+print(vegetable)# str
+print(vegetable2)# str
+print(ati)# int
+print(asi)# int
+print(atasi)# int
+print(ertmtlshvd)# float
+print(cxrmtlotx)# float
+print(nolimtlshvd)# float
 
 #data type==> მონაცემთა ტიპები
 
@@ -19,14 +30,30 @@ print(0.7)# float
 # / გაყოფა
 # * გამრავლება
 
-print(10 + 12)
-print(49 + 239)
-print(29 - 12)
-print(120 - 74)
-print(18 / 2)
-print(90 / 4)
-print(14 * 3)
-print(24 * 4)
+ati = 10
+tormeti = 12
+ormodzacx = 49
+orasodzdacxrm = 239
+odzcxr = 29
+asoci = 120
+samctotx = 74    
+tvrameti = 18 
+ori = 2
+otxmdcat = 90
+otxi = 4
+totxmeti = 14
+sami = 3
+ocdaotx = 24
+
+
+print(ati + tormeti)
+print(ormodzacx + orasodzdacxrm )
+print(odzcxr - tormeti)
+print(asoci - samctotx)
+print(tvrameti / ori)
+print(otxmdcat/ otxi)
+print(totxmeti * sami)
+print(ocdaotx * otxi)
 
 hi = "გამარჯობა"
 me = "მე"
