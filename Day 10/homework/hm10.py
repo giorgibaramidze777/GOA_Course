@@ -1,4 +1,4 @@
 print(9 < 5)
-print(5 < 1)
-print(7 > 6)
-print(9 < 11)
+print(5 <= 1)
+print(6 == 6)
+print(9 != 11)
