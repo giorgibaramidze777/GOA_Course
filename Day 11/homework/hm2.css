@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(70, 1, 1);
+}
+
+button {
+    color: rgb(0, 255, 13); 
+}  
+
+h1 {
+    color: rgb(0, 0, 255); background-color: dodgerblue;
+}
+
+h2 {
+    color: red; background-color:  darkviolet;
+}
+
+h3 {
+    color: aqua; background-color: darkgreen;
+}
+
+h4 {
+    color: chocolate; background-color: blue;
+}
+
+h5 {
+    color: brown; background-color: aqua;
+}
+
+h6 {
+    color: lightskyblue; background-color: seagreen;
+}
