@@ -1,0 +1,13 @@
+#i1 {
+    color: rgb(0, 175, 245);
+}
+
+body {
+    background: #0000ff;
+    background: linear-gradient(131deg, rgba(0, 0, 255, 1) 16%, rgba(0, 0, 255, 1) 29%, rgba(82, 151, 255, 1) 38%, rgba(82, 151, 255, 1) 65%, rgba(255, 0, 0, 1) 82%, rgba(255, 0, 0, 1) 94%);
+}
+
+#video1 {
+    margin-top: -110px;
+    margin-left: -5px;
+}
