@@ -1,0 +1,35 @@
+#1 {
+    text-decoration: overline dashed red;
+}
+
+#2 {
+     text-decoration: underline wavy purple;
+}
+
+#3 {
+     text-align: justify;
+     text-decoration: line-throughdashed blue;
+}
+
+#4 {
+    text-shadow: 5px 4px green;
+}
+
+#5 {
+    text-shadow: 7px 50px 2348px purple;
+}
+
+#6 {
+    text-shadow: 90px 100px 200px brown;
+}
+
+
+/* text-decoration == ჩვენ ელემენტს ალამაზებს 
+   text-shadow == ამატებს ელემენტს ჩრდილს
+   text-transform == იგივეს რაც python-ში ფუნქცია მაგრამ იწერება სხვანაირად*/
+
+
+
+
+
+
