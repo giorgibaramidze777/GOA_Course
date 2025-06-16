@@ -1,0 +1,70 @@
+/* font-family */
+/* @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap'); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap');
+
+h1 {
+    color: green;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+ a { 
+    /* /* pseudoclass(:)  */
+    /* link(rodesac jer ar dagvikliket linkze) */
+    /* visited(rodesac ukve gadavedit bmulze) */
+    /* hover(rodesac mauss gadausvav links) */
+    /* active(roca vawerd links*/ 
+    /* text-decoration: none; */
+    color: black;
+ } 
+
+
+#h:link {
+    color: rgb(0, 47, 255);
+}
+
+#h:visited {
+    color: rgb(246, 255, 0);
+}
+
+.t:hover {
+          color: green;
+}
+
+.t:active {
+    color: red;
+}
+
+
+
+
+
+
+
+h2 {
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+.J:link {
+    color: rgb(0, 47, 255);
+}
+
+.J:visited {
+    color: rgb(246, 255, 0);
+}
+
+.J:hover {
+    color: green;
+}
+
+.J:active {
+    color: red;
+}
