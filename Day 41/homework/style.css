@@ -1,0 +1,38 @@
+#li1 {
+    background-color: gray;
+    margin-top: -10px;
+}
+
+#li2 {
+    background-color: gray;
+    margin-top: 10px;
+}
+
+#li3 {
+    background-color: gray;
+    margin-top: 10px;
+}
+
+.ol1 {
+    list-style: square outside none;
+    margin-top: 15px;
+    background-color: rgb(124, 122, 122);
+}
+
+.ul2 {
+    list-style: disc outside none;
+}
+
+.li4 {
+    background-color: rgb(133, 102, 110);
+}
+
+.li5 {
+    margin-top: 15px;
+    background-color: rgb(133, 102, 110);
+}
+
+.li6 {
+    margin-top: 15px;
+    background-color: rgb(133, 102, 110);
+}

@@ -1,0 +1,29 @@
+/* ol {
+    list-style: lower-roman inside none;
+} */
+
+/* .li { */
+    /* list-style: lower-alpha inside none; */
+    /* color: blue; */
+    /* font-size: 20px; */
+/* } */
+/*  */
+/* .li:hower { */
+    /* color: red; */
+    /* font-size: larger; */
+    /* transition: 1.0s; */
+/* } */
+
+/* ol { */
+    /* list-style: square inside url("https://www.w3schools.com/css/img_tree.png"); */
+/* } */
+
+.ol1 {
+    list-style: square inside none;
+}
+
+.ol2 {
+    list-style: decimal inside none;
+    background-color: gray;
+    border-radius: 100px;
+}
