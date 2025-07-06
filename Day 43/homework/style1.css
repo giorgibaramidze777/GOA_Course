@@ -1,0 +1,18 @@
+input {
+    width: 150px;
+    padding: 7px;
+    margin-top: 8px;
+}
+
+input[type="submit"] {
+    background-color: #00ff00;
+    width: 95px;
+    height: 35.5px;
+    border-radius: 3.5px;
+    border: none;
+    margin-top: 17px;
+}
+
+div {
+    text-align: center;
+}

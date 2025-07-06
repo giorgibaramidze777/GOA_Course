@@ -1,0 +1,29 @@
+p {
+    color: #44c4e7;
+}
+
+input {
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: #44c4e7;
+    width: 185px;
+    height: 35px;
+    transition: 0.9s;
+    border-radius: 2px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #00c8ff;
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+}
+
+form {
+    margin-left: 15px;
+}
