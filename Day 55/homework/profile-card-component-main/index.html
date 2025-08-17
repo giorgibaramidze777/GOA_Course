@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(185, 75%, 39%);
+  position: relative;
+  overflow: hidden;
+}
+.top, .bottom {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
+}
+.top {
+  top: -10%;
+  left: 0px;
+  width: 40%;
+}
+.bottom {
+  bottom: -10%;
+  right: -5%;
+  width: 40%;
+}
+.card {
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  margin-left: 100px;
+  margin-top: 200px;
+}
+.card img.bg {
+  width: 100%;
+}
+.card img.avatar {
+  width: 90px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -50px;
+}
+.card h1 {
+  font-size: 22px;
+  margin: 15px 0 5px;
+}
+.card p {
+  color: hsl(185, 75%, 39%);
+  margin: 0 0 20px;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid hsl(185, 75%, 39%, 0.2);
+}
+.stats div span {
+  display: block;
+  font-weight: 700;
+}
+.stats div p {
+  margin: 0;
+  color: hsl(185, 75%, 39%);
+}
+@media (min-width: 768px) {
+  .card {
+    width: 450px;
+  }
+}
+</style>
+</head>
+<body>
+<img src="./images/bg-pattern-top.svg" class="top" alt="">
+<img src="./images/bg-pattern-bottom.svg" class="bottom" alt="">
+<div class="card">
+  <img class="bg" src="./images/bg-pattern-card.svg" alt="">
+  <img class="avatar" src="./images/image-victor.jpg" alt="">
+  <h1>Victor Crest <span>26</span></h1>
+  <p>London</p>
+  <div class="stats">
+    <div>
+      <span>80K</span>
+      <p>Followers</p>
+    </div>
+    <div>
+      <span>803K</span>
+      <p>Likes</p>
+    </div>
+    <div>
+      <span>1.4K</span>
+      <p>Photos</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
