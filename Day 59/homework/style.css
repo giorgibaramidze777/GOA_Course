@@ -1,0 +1,45 @@
+.car{
+    background-image: url(image-removebg-preview\ \(1\).png);
+    width: 550px;
+    height: 282px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+.wheel1, .wheel2{
+    background-image: url(aluminum-wheel-car-tire-style-racing-with-disk-brake-on-white-background-vector.jpg);
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.wheel1{
+    position: relative;
+    left: 310px;
+    top: 150px;
+}
+.wheel2{
+    position: relative;
+    left: 23px;
+    top: -10px;
+}
+#random{
+    transition: 1s;
+    width: 100px;
+    height: 20px;
+}
+#random:hover{
+    transition: 5s;
+    .wheel2{
+        transition: 5s;
+        transform: rotate(2000deg);
+    }
+    .wheel1{
+        transition: 5s;
+        transform: rotate(2000deg);
+    }
+    transform: translate(900px,0);
+}
