@@ -1,0 +1,29 @@
+
+body {
+    overflow: hidden;
+}
+
+.img {
+    animation: lele 2s infinite alternate;
+    position: absolute;
+} 
+
+@keyframes lele {
+    0% {
+        margin-top: 0%;
+        transform: rotate(0px);
+    }
+
+    98% {
+        margin-top: 48%;
+    }
+
+    99% {
+        margin-top: 35%;
+    }
+
+    100% {
+        margin-top: 48%;
+        transform: rotate(1945px);
+    }
+} 

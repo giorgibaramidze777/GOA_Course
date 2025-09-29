@@ -1,0 +1,490 @@
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        :root {
+            --ff: 40px;
+            --one: 100px;
+            --two: 200px;
+            --three: 300px;
+            --four: 400px;
+            --five: 500px;
+        }
+       
+        body {
+            overflow-x: hidden;
+            height: 597vh;
+        }
+
+        .heda {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background-color: white;
+            width: 100%;
+            height: 70px;
+        }
+
+        .ps {
+           position: relative;
+           left: 190px;
+           font-family: "Roboto", sans-serif;
+           font-optical-sizing: auto;
+           font-weight: weight;
+           font-style: normal;
+           font-variation-settings:
+             "wdth" 300;
+        }
+
+        .thal {
+            margin-left: 425px;
+        }
+
+        .insta {
+            margin-left: 240px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .search {
+            margin-left: -10px;
+            margin-top: -5px;
+            cursor: pointer;
+        }
+
+        .shop {
+            margin-left: -15px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .h1 {
+            position: relative;
+            top: 50px;
+            left: 190px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 70px;
+        }
+
+        .p2 {
+            margin-left: 190px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 22px;
+        }
+
+        .shopbtn {
+            position: relative;
+            top: -560px;
+            left: 185px;
+            width: 120px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 52px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+        .shopbtn:hover {
+            width: 130px;
+            height: 60px;
+        }
+
+        .phone {
+            position: relative;
+            left: 900px;
+            top: -350px;
+        }
+
+        .heading1 {
+            margin-top: -350px;
+            margin-left: 60vh;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+               "wdth" 100;
+        }
+
+        .elgudja1 {
+            margin-left: 66vh;
+        }
+
+        .elgudja2 {
+            margin-left: 75.5vh;
+        }
+
+        .elgudja3 {
+            margin-left: 79vh;
+        }
+
+        .france_cul {
+            position: absolute;
+            left: 220px;
+        }
+
+        .france_pep {
+            position: absolute;
+            left: 650px;
+        }
+
+        .germany {
+            position: absolute;
+            left: 1080px;
+        }
+
+        .elgudja_ravi {
+            margin-left: 285px;
+            margin-top: 450px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+        }
+
+        .price1 {
+            margin-left: 285px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+        }
+
+        .order-cart1 {
+            margin-left: 285px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .elgudja_ravi1 {
+            z-index: 2;
+            margin-left: 675px;
+            margin-top: -155px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+        }
+
+        .price2 {
+            z-index: 2;
+            margin-left: 675px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+        }
+
+        .order-cart2 {
+            z-index: 2;
+            margin-left: 675px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .elgudja_ravi2 {
+            z-index: 3;
+            margin-left: 1080px;
+            margin-top: -155px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+        }
+
+        .price3 {
+            z-index: 3;
+            margin-left: 1080px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+        }
+
+        .order-cart3 {
+            z-index: 3;
+            margin-left: 1080px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .nah_bro_js_sybau💔 {
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        .lol {
+            z-index: 3;
+            margin-left: 490px;
+            margin-top: -265px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 30px;
+        }
+
+        .lol2 {
+            z-index: 4;
+            margin-top: 50px;
+            margin-left: 490px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 430;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 17px;
+            width: 258px;
+            height: 252px;
+        }
+
+        .im_tired_of_ts_shii_bro💔 {
+            width: 120%;
+            height: 350px;
+            background-color: rgb(184, 184, 184);
+            margin-top: 40px;
+        }
+
+        .wyri💔 {
+            margin-left: 1340px;
+            margin-top: 10px;
+        }
+
+        .ah {
+            margin-left: 1030px;
+            margin-top: -280px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 30px;
+        }
+
+        .popka {
+            width: 250px;
+            height: 440px;
+            margin-left: 1050px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 20px;
+        }
+
+        .help_me {
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+
+        .RAHH {
+            width: 250px;
+            height: 440px;
+            margin-left: 1050px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 20px;
+            margin-top: -270px;
+            margin-left: 500px;
+        }
+
+        .immaBoutToDie {
+            width: 280px;
+            height: 440px;
+            margin-left: 500px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 20px;
+            margin-top: -390px;
+        }
+
+        .RAHHHHHHHHHHHHHHHHHHHHHHHHHHHHH {
+            margin-left: 750px;
+            margin-top: 200px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 36px;
+        }
+
+        .HELP_ME_BRO {
+            margin-left: 650px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 20px;
+            width: 550px;
+            height: 40px;
+        }
+
+        #name {
+            z-index: 5;
+            margin-left: 650px;
+            margin-top: 20px;
+            width: 200px;
+            height: 40px;
+            border: 1px solid black;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        #lastname {
+            z-index: -1;
+            margin-left: 100px;
+            margin-top: -138px;
+            width: 200px;
+            height: 40px;
+            border: 1px solid black;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        #mail {
+            POSITION: Absolute;
+            z-index: -1;
+            left: 660px;
+            margin-top: 138px;
+            width: 515px;
+            height: 40px;
+            border: 1px solid black;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        #submit {
+            position: absolute;
+            z-index: -1;
+            left: 850px;
+            margin-top: 200px;
+            width: 115px;
+            height: 40px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+              "wdth" 300;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .fin {
+            margin-top: 250px;
+            margin-left: -10px;
+        }
+
+        @media (max-width: 1374px) {
+            .phone {
+                margin-left: -15%;
+                margin-bottom: 234%;
+            }
+
+            .text {
+                margin-left: 20%;
+            }
+
+            .shopbtn {
+                z-index: 3;
+                margin-left: 40%;
+                margin-bottom: 164%;
+                
+            }
+        }
