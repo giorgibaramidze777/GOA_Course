@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="dd" id="dd" placeholder="ye" onchange="logFive()">
+    <img src="gojo.png" alt="gojo" id="img">
+    <button id="ehh">ehh</button>
+    <script>
+        function logFive() {
+            console.log(document.getElementById('dd').value);
+        }
+
+        let img = document.getElementById("img")
+        let click = document.getElementById("ehh")
+        
+        let imgs = [
+            'gojo.png',
+            'idk.png',
+        ]
+        
+        let count = 0
+        ehh.onclick = function(){
+            img.src = imgs[count]
+            if (count > 2){
+                count = 0
+            }else {
+                count++
+            }
+        
+        }
+    </script>
+</body>
+</html>

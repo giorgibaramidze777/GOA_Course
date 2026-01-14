@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            letter-spacing: 3px;
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+        }
+
+        .divani {
+            font-size: 35px;
+            display: flex;
+            flex-direction: wrap;
+            gap: 53px;
+            color: white;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            margin-top: 50px;
+            
+        }
+
+        .mddd {
+            font-size: 25px;
+            display: flex;
+            flex-direction: wrap;
+            gap: 50px;
+            color: white;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            margin-top: 10px;
+        }
+
+        #barambino {
+            font-size: 100px;
+        }
+        
+        #year {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+            font-size: 60px;
+            margin-top: 200px;
+            margin-left: -10px;
+        }
+
+        #sec {
+            margin-left: -23px;
+        }
+
+        #min {
+            margin-left: -15px;
+        }
+
+        #hr {
+            margin-left: 5px;
+        }
+
+        #day {
+            margin-left: -5px;
+        }
+
+        #time {
+            margin-left: 50px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1 id="year"><span id="barambino">2025</span> Ends in </h1>
+        <div id="count"></div>
+        <div id="time">
+            <div class="divani">
+                <p id="day">0</p>
+                <p id="hr">0</p>
+                <p id="min">0</p>
+                <p id="sec">0</p>
+            </div>
+    
+            <div class="mddd">
+                <p id="hr">day</p>
+                <p id="day">hr</p>
+                <p id="min">min</p>
+                <p id="sec">sec</p>
+            </div>
+        </div>
+            
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
