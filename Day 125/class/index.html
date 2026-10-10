@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- https://api.escuelajs.co/api/v1/products/
+
+საიტზე დაამატეეთ ერთი input და ერთი submit ღილაკი, შემდეგ მაგ ინფუთში მომხარებელმა უნდა ჩაწეროს რაიმე პროდუქტის title, და დაsubmit ებაზეე უნდა გამოიტანოთ ეგ კონკრეტული ინფორმაცია მაგ პროდუქტზე
+
+ამ დავალებას დაუმატეთ რომ ძებნიდეს გინდც ნახევარი title ჩაწეეროს მომხარებელმა და ასევეე რომც ჩაწეროს id -->
+    <input type="text" id="productTitle" placeholder="Enter product title or id">
+    <input type="submit" value="Search" id="searchButton">
+    <script>
+        let searchButton = document.getElementById('searchButton')
+        let productTitleInput = document.getElementById('productTitle')
+        let resultDiv = document.createElement('div')
+        resultDiv.id = 'result'
+        document.body.appendChild(resultDiv)
+
+        // searchButton.addEventListener('click', function(event) {
+        //     event.preventDefault()
+
+            async function name(data) {
+                let fetched = await fetch('https://api.escuelajs.co/api/v1/products/')
+                let ahh = await fetched.json()
+                let productTitleOrId = productTitleInput.value.trim()
+                if (!productTitleOrId) {
+                    resultDiv.textContent = 'Please enter a product title or id.'
+                    return
+                }
+
+                let product = ahh.find(item => 
+                    item.title.toLowerCase().includes(productTitleOrId.toLowerCase()) || 
+                    item.id.toString() === productTitleOrId
+                )
+                if (product) {
+                    resultDiv.innerHTML = `
+                        <h2>${product.title}</h2>
+                        <p>Price: $${product.price}</p>
+                        <p>${product.description}</p>
+                        <img src="${product.images[0] || ''}" alt="${product.title}" width="150">
+                    `
+                } else {
+                    resultDiv.textContent = 'Product not found'
+                }
+                }
+                searchButton.addEventListener('click', name)
+            // .catch(error => {
+            //         resultDiv.textContent = 'Error fetching products.'
+            //         console.error('Error fetching products:', error)
+            //     })
+            
+                
+                
+    </script>
+</body>
+</html>

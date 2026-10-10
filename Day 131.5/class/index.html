@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(141, 12, 12);
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1) შექმენით საიტი GOA შესახებ, კრიტერიუმები: უნდა იყოს სარეგისტრაციო გვერდი და როდესაც უკვე შევავსებთ ამ სარეგისტრაციო ველს უნდა გადავიდეთ თვითონ GOA საიტზე. გოას საიტი ააწყეთ ყველაფრით რაც კი იცით და ასევე mma სექციაც გააკეთეთ ფოტოებიც აუცილებლად იყოს -->
+    <div>
+        <h1>GOA საიტი</h1>
+        <p>კეთილი იყოს თქვენი მოგზაურობა GOA-ში!</p>
+        <form action="https://www.goa.com" method="get">
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">ელ.ფოსტა:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="რეგისტრაცია">
+        </form>
+    </div>
+
+    <script>
+        let form = document.querySelector('form')
+        let nameS = document.getElementById('name')
+        let emailS = document.getElementById('email')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            let name = document.getElementById('name').value
+            let email = document.getElementById('email').value
+            if (name && email) {
+                window.location.href = './main.html'
+            } else {
+                alert('გთხოვთ შეავსოთ ყველა ველი!')
+                nameS.style.background = 'red'
+                emailS.style.background = 'red'
+            }
+        })
+    </script>
+</body>
+</html>

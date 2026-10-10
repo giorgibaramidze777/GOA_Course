@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #1e293b;
+      color: white;
+      gap: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    .btn-green { background-color: #22c55e; color: white; }
+    .btn-blue { background-color: #3b82f6; color: white; }
+    .btn-red { background-color: #ef4444; color: white; }
+    .btn-yellow { background-color: #eab308; color: black; }
+
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      background-color: white;
+      border: 3px solid #475569;
+      transition: background-color 0.3s;
+    }
+
+    #colorText {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="buttons">
+    <button class="btn-green" onclick="changeColor('green')">Green</button>
+    <button class="btn-blue" onclick="changeColor('blue')">Blue</button>
+    <button class="btn-red" onclick="changeColor('red')">Red</button>
+    <button class="btn-yellow" onclick="changeColor('yellow')">Yellow</button>
+  </div>
+
+  <div id="colorBox"></div>
+
+  <p id="colorText">არჩეული ფერია: </p>
+
+  <script>
+    let currentColor = ''
+
+    function updateColorEffect() {
+      const text = "არჩეული ფერია: " + currentColor
+      document.getElementById('colorText').innerText = text
+      console.log(text)
+    }
+
+    function changeColor(color) {
+      currentColor = color
+      
+      document.getElementById('colorBox').style.backgroundColor = color
+
+      updateColorEffect()
+    }
+  </script>
+
+</body>
+</html>

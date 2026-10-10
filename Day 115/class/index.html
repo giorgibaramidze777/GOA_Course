@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burger menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+        #BDYJTB💔 {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        #BDYJTB💔_2 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        p {
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+
+        p:hover {
+            color: gray;
+            text-decoration: underline;
+            transition: 0.3s ease;
+        }
+ 
+        #BDYJTB💔_3 {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            top: 102px;
+            right: 0px;
+            background-color: black;
+            padding: 20px;
+            color: white;
+            align-items: center;
+            transform: translate(1050px);
+            transition: 0.2s ease-in-out;
+        }
+
+        #btnburger {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transform: translate(900%, -205%);
+            display: none;
+        }
+ 
+        @media (max-width: 307px) {
+            #BDYJTB💔_2 {
+                display: none;
+            }
+
+            #btnburger {
+                display: block;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div id="BDYJTB💔">
+        <h1>site</h1>
+        <div id="BDYJTB💔_2">
+           <p>home</p>
+           <p>about</p>
+           <p>help</p>
+           <p>contact</p>
+        </div>
+    </div>
+    <img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="burger menu" id="btnburger">
+    <div id="BDYJTB💔_3">
+           <p>home</p>
+           <p>about</p>
+           <p>help</p>
+           <p>contact</p>
+    </div>
+
+    <script>
+        let btnburger = document.getElementById("btnburger")
+        let menu = document.getElementById("BDYJTB💔_3")
+
+        btnburger.addEventListener("click", function() {
+            if (menu.style.transform == "translate(1050px)") {
+                menu.style.transform = "translate(0px)"
+            } else {
+                menu.style.transform = "translate(1050px)"
+            }
+        })
+    </script>
+</body>
+</html>

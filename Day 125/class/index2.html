@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+</head>
+<body>
+    <!-- https://api.escuelajs.co/api/v1/products/
+
+საიტზე დაამატეეთ ორი input და ერთი submit ღილაკი, შემდეგ მაგ ორ ომფითშო მომხარებელმა უნდა ჩაწეროს რაიმე id ები, და submitზე დაჭერაზე უნდა გამოიტანოთ ეგ კონკრეტული პროდუქტების ინფორმაცია რომელიც მაგ ორ id ს შორის range შია
+
+მაგ:
+id1: 2
+id2: 8
+
+products:product3, product4, product5, product6, product7 -->
+<form action="">
+    <input type="text" id="productId1" placeholder="Enter first product id">
+    <input type="text" id="productId2" placeholder="Enter second product id">
+    <input type="submit" value="Search" id="searchButton">
+    <div id="result"></div>
+</form>
+    <script>
+        let searchButton = document.getElementById('searchButton')
+        let productIdInput1 = document.getElementById('productId1')
+        let productIdInput2 = document.getElementById('productId2')
+        let resultDiv = document.getElementById('result')
+
+        searchButton.addEventListener('click', function(event) {
+            event.preventDefault()
+            resultDiv.innerHTML = ''
+
+            let productId1 = parseInt(productIdInput1.value.trim())
+            let productId2 = parseInt(productIdInput2.value.trim())
+            if (isNaN(productId1) || isNaN(productId2)) {
+                resultDiv.textContent = 'Please enter valid product ids.'
+                return
+            }
+
+            fetch('https://api.escuelajs.co/api/v1/products/')
+                .then(response => response.json())
+                .then(data => {
+                    let productsInRange = data.filter(item => 
+                        item.id >= Math.min(productId1, productId2) && 
+                        item.id <= Math.max(productId1, productId2)
+                    )
+                    if (productsInRange.length > 0) {
+                        resultDiv.innerHTML = productsInRange.map(product => `
+                            <div>
+                                <h2>${product.title}</h2>
+                                <p><strong>Price:</strong> $${product.price}</p>
+                                <p><strong>Description:</strong> ${product.description}</p>
+                                ${product.images && product.images[0] ? `<img src="${product.images[0]}" alt="${product.title}">` : ''}
+                            </div>
+                        `).join('')
+                    } else {
+                        resultDiv.textContent = 'No products found in the specified range.'
+                    }
+                })
+                .catch(error => {
+                    resultDiv.textContent = 'Error fetching products.'
+                    console.error('Error fetching products:', error)
+                })
+        })
+    </script>
+</body>
+</html>

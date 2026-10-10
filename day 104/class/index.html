@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        button {
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+
+        #message {
+            width: 350px;
+            text-align: center;
+            height:130px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transform: translate(365px);
+            transition:0.5s;
+        }
+    </style>
+</head>
+<body>
+    <!-- შექმენით რაიმეინფუთი, და   ასევე  submit ღილაკი,  ამ submit  ღილაკის  დაჭერაზე უნდა გამოჩნდეს  კუთხეში მესიჯი იმ   ტექსტით რაც   ინფუთში ეწერა,  ზუსტად 3  წამით  უნდა გამოჩნდეს ეს დივი და შემდეგ   გაქრეს -->
+    
+    <form id="gng">
+        <input type="text" id="dd" placeholder="smth"><br><br>
+        <input type="submit" value="click me!" id="button">
+    </form>
+    <div id="message">
+        <h1>Notification</h1>
+        <hr>
+        <p><span id="p1"></span></p>
+    </div>
+    
+    <script>
+        let gng = document.getElementById("gng")
+        let message = document.getElementById("message")
+        let p1 = document.getElementById('p1')
+        gng.addEventListener("submit", (e) => {
+            e.preventDefault()
+            let inp = document.getElementById('dd').value
+            p1.textContent = inp
+            message.style.transform = "translate(0px)"
+            setTimeout(() => {
+                message.style.transform = "translate(365px)"
+            }, 3000)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+1 ახსენით რა განხსვავებაა id სა და class სელქტორს შორის და მ,ათი საშვალებით გასტილეთ ელემენტები
+id aris uniklaluri id erti tagistvis
+class-it uamrav tagze gamoyeba, da gastilvashi shegvidzlia bevri tagi erti classit gavstilot
+
+2 ახსენი რას შვება tag სელექტორი. და დაწერეთ 1 მაგალითი tag სელექტორზე
+stils adebs yvela im HTML tegs, rasac miutiteb

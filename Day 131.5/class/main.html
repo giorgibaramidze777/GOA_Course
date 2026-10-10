@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(141, 12, 12);
+            color: white;
+        }
+
+        #mma {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        #div1 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        #mma2 {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            transition: 2.1s;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <div>
+        <h1>GOA საიტი</h1>
+        <p>კეთილი იყოს თქვენი მოგზაურობა GOA-ში!</p>
+    </div>
+
+    <div id="div1">
+        <h2>MMA სექცია</h2>
+        <img src="./images (2).jpg" alt="MMA Image" id="mma">
+        <p>GOA-ში ასევე შეგიძლიათ ისიამოვნოთ MMA-ს ექსტრემალური სპორტით!</p>
+    </div>
+    </header>
+    <main>
+        <div>
+            <h2>ასევე, GOA MARTIAL ARTS სექცია მოივირებს ტქვენ ბავშვს, და უფრო ნაკლების ეშინია!</h2>
+            <h2>ასევე ნახავს ახალ მეგობრებს!</h2>
+            <h2>რომ დარეგისტრირდეთ, გთხოვთ დაწეროთ თქვენი ნომერი აქა</h2>
+            <form action="">
+                <label for="tel">ტელეფონის ნომერი:</label>
+                <input type="tel" id="tel" name="tel" required><br><br>
+                <input type="submit" value="რეგისტრაცია">
+            </form>
+            <img src="./image.png" alt="mma kids" id="mma2">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GOA საიტი. ყველა უფლება დაცულია.</p>
+    </footer>
+
+
+</body>
+</html>
